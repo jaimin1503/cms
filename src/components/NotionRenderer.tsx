@@ -32,7 +32,7 @@ export const NotionRenderer = ({id}: {
     }
 
     return <div>
-        <div style={{  }}>
+        <div className=" md:w-[80vw]" style={{  }}>
             <NotionRendererLib recordMap={data} fullPage={true} darkMode={true} />
         </div>
     </div>

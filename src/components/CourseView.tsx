@@ -13,7 +13,7 @@ export const CourseView = ({ rest, course, fullCourseContent, courseContent, nex
   return <div>
     <div className="flex">
       <Sidebar fullCourseContent={fullCourseContent} courseId={course.id} />
-      <div className="grow">
+      <div className="grow flex justify-center">
         <div className="p-2">
           {contentType === "notion" ? <NotionRenderer id={courseContent[0]?.id } /> : null}
           {contentType === "video" ? <ContentRenderer nextContent={nextContent} content={{ thumbnail: courseContent[0]?.thumbnail || "", id: courseContent[0]?.id || 0, title: courseContent[0]?.title || "", type: contentType || "video", description: courseContent[0]?.description || "" }} /> : null}
